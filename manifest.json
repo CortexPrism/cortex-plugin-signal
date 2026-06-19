@@ -1,0 +1,33 @@
+{
+  "name": "cortex-plugin-signal",
+  "version": "1.0.0",
+  "description": "Signal Messenger Bot — Cortex agent via Signal for end-to-end encrypted communication, ideal for security-conscious teams",
+  "kind": "esm",
+  "entryPoint": "mod.ts",
+  "runtime": "deno",
+  "author": "CortexPrism",
+  "license": "MIT",
+  "repository": "https://github.com/CortexPrism/cortex-plugin-signal",
+  "homepage": "https://cortexprism.io/marketplace/plugins/signal",
+  "capabilities": ["tools", "network:fetch"],
+  "tools": [
+    {
+      "name": "signal_send_message",
+      "description": "Send encrypted message to Signal recipient or group",
+      "params": []
+    },
+    {
+      "name": "signal_receive_messages",
+      "description": "Receive and process incoming Signal messages",
+      "params": []
+    },
+    {
+      "name": "signal_manage_groups",
+      "description": "Create and manage Signal groups",
+      "params": []
+    }
+  ],
+  "dependencies": {},
+  "peerDependencies": { "cortex": ">=1.0.0" },
+  "aiDisclosure": { "tools": ["Kilo (DeepSeek) — batch scaffold"], "humanReview": true }
+}
